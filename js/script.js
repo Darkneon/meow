@@ -20,6 +20,7 @@ jQuery(function($) {
         }
         $('#splash').fadeOut('fast');
         $('#main').fadeIn('fast');
+        $message.focus();
       } else {
         $('#connect .form-group').addClass('has-error');
         $('#connect .control-label').html("That nickname is already taken");
