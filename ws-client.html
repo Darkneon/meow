@@ -6,7 +6,19 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
-
+    <div id="splash">
+      <h1>Welcome to MEOW</h1>
+      <p>MEOW is a web chat service based on Socket.IO and Node.js</p>
+      <form id="connect">
+        <div class="form-group">
+          <label for="nickname">Choose a nickname</label>
+          <label class="control-label" for="inputError"></label>
+          <input type="text" class="form-control" placeholder="e.g. John Smith, spiderman" id="nickname">
+        </div>
+        <button type="submit" class="btn btn-primary">Connect</button>
+      </form>
+    </div>
+    
     <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/bootstrap.min.js"></script>
