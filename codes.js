@@ -1,0 +1,8 @@
+var CODES = {};
+
+CODES.STATUS = {};
+
+CODES.STATUS.SUCCESS = 0;
+CODES.STATUS.ALREADY_EXISTS = 1;
+
+module.exports = CODES;
