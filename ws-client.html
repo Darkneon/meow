@@ -4,11 +4,44 @@
     <title>Chat with Socket.io and Node.js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div id="splash">
+      <h1>Welcome to MEOW</h1>
+      <p>MEOW is a web chat service based on Socket.IO and Node.js</p>
+      <form id="connect">
+        <div class="form-group">
+          <label for="nickname">Choose a nickname</label>
+          <label class="control-label" for="inputError"></label>
+          <input type="text" class="form-control" placeholder="e.g. John Smith, spiderman" id="nickname">
+        </div>
+        <button type="submit" class="btn btn-primary">Connect</button>
+      </form>
+    </div>
+    
+    <div class="container" id="main">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="chat"></div>
+            <form id="send-message">
+            <div class="input-group">
+              <input type="text" class="form-control" id="message">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">Submit</button>
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <div id="users"></div>
+        </div>
+      </div>
+    </div>
 
     <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

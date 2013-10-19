@@ -1,0 +1,23 @@
+#main {
+  display: none;
+}
+
+#splash {
+  width: 400px;
+  margin: 200px auto;
+}
+
+#chat, #users {
+  height: 500px;
+}
+
+#chat {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+#users {
+  padding-top: 20px;
+}
